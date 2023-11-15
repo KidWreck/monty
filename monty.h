@@ -53,6 +53,13 @@ void print_s(stack_t **, unsigned int);
 void rot_t7t(stack_t **, unsigned int);
 void rot_fog(stack_t **, unsigned int);
 
+/*FUNC.c*/
+void print_st(stack_t **, unsigned int);
+void add_st(stack_t **, unsigned int);
+void print_fog(stack_t **, unsigned int);
+void pop_fog(stack_t **, unsigned int);
+
+
 
 
 /************************************/
@@ -65,15 +72,13 @@ void find_func(char *, char *, int, int);
 
 /*Stack operations*/
 stack_t *my_node(int n);
-void free_nodes(void);
-void print_st(stack_t **, unsigned int);
-void add_st(stack_t **, unsigned int);
+void free_(void);
+
 void add_q(stack_t **, unsigned int);
 
 void call_func(op_func, char *, char *, int, int);
 
-void print_fog(stack_t **, unsigned int);
-void pop_fog(stack_t **, unsigned int);
+
 void nop_(stack_t **, unsigned int);
 void swap_(stack_t **, unsigned int);
 
