@@ -1,6 +1,7 @@
 #ifndef MONTY_H
 #define MONTY_H
 
+#define _GNU_SOURCE /* for getline */
 #include <stdio.h>
 #include <unistd.h>
 #include <string.h>

@@ -60,7 +60,7 @@ stack_t *my_node(int n)
 }
 
 /**
- * free_nodes - Free nodes.
+ * free_ - Free nodes.
  */
 void free_(void)
 {
