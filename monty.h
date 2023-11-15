@@ -59,7 +59,14 @@ void add_st(stack_t **, unsigned int);
 void print_fog(stack_t **, unsigned int);
 void pop_fog(stack_t **, unsigned int);
 
+void nop_(stack_t **, unsigned int);
+void swap_(stack_t **, unsigned int);
+void add_(stack_t **, unsigned int);
+void sub_(stack_t **, unsigned int);
+void div_(stack_t **, unsigned int);
 
+void mul_(stack_t **, unsigned int);
+void mod_(stack_t **, unsigned int);
 
 
 /************************************/
@@ -79,15 +86,10 @@ void add_q(stack_t **, unsigned int);
 void call_func(op_func, char *, char *, int, int);
 
 
-void nop_(stack_t **, unsigned int);
-void swap_(stack_t **, unsigned int);
+
 
 /*Math operations with nodes*/
-void add_(stack_t **, unsigned int);
-void sub_(stack_t **, unsigned int);
-void div_(stack_t **, unsigned int);
-void mul_(stack_t **, unsigned int);
-void mod_(stack_t **, unsigned int);
+
 
 
 
