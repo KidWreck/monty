@@ -8,7 +8,7 @@
  */
 void add_st(stack_t **n, __attribute__((unused))unsigned int ln)
 {
-	stack_t *t;
+	stack_t *t, *head;
 
 	if (n == NULL || *n == NULL)
 		exit(EXIT_FAILURE);
