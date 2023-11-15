@@ -43,8 +43,8 @@ typedef void (*my_op)(stack_t **, unsigned int);
 
 
 /*ERROR.c*/
-void err_1(int err, ...)
-void err_2(int err, ...)
+void err_1(int err, ...);
+void err_2(int err, ...);
 
 /*STRINGS.c*/
 void print_c(stack_t **, unsigned int);
@@ -75,7 +75,7 @@ void open_f(char *);
 void read_f(FILE *);
 int sep_(char *, int, int);
 void find_func(char *, char *, int, int);
-void call_func(op_func, char *, char *, int, int);
+void call_func(my_op, char *, char *, int, int);
 
 
 #endif
