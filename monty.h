@@ -42,6 +42,14 @@ typedef struct instruction_s
 extern stack_t *head;
 typedef void (*my_op)(stack_t **, unsigned int);
 
+
+/*ERROR.c*/
+void err_1(int err, ...)
+void err_2(int err, ...)
+
+
+
+/************************************/
 /*file operations*/
 void open_f(char *);
 int parse_line(char *, int, int);
@@ -76,9 +84,6 @@ void print_s(stack_t **, unsigned int);
 void rot_t7t(stack_t **, unsigned int);
 
 /*Error hanlding*/
-void err_1(int error_code, ...);
-void err_2(int error_code, ...);
-void err_3(int error_code, ...);
 void rot_fog(stack_t **, unsigned int);
 
 #endif
