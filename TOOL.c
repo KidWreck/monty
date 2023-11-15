@@ -35,14 +35,14 @@ void read_f(FILE *fd)
 
 
 /**
- * sup_ - Separates into tokens
+ * sep_ - Separates into tokens
  * @buf: buffer
  * @ln: line number
  * @klam: format. If 0 nodes as a stack , if 1 nodes as a queue.
  * Return: 0 if stack , 1 if queue.
  */
 
-int sup_(char *buf, int ln, int klam)
+int sep_(char *buf, int ln, int klam)
 {
 	char *op, *v;
 	const char *dlm = "\n ";
