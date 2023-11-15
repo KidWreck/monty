@@ -1,7 +1,6 @@
 #ifndef MONTY_H
 #define MONTY_H
 
-#define _GNU_
 #include <stdio.h>
 #include <unistd.h>
 #include <string.h>
@@ -67,30 +66,16 @@ void div_(stack_t **, unsigned int);
 
 void mul_(stack_t **, unsigned int);
 void mod_(stack_t **, unsigned int);
-
-
-/************************************/
-/*file operations*/
-void open_f(char *);
-int parse_line(char *, int, int);
-void read_f(FILE *);
-int len_c(FILE *);
-void find_func(char *, char *, int, int);
-
-/*Stack operations*/
 stack_t *my_node(int n);
 void free_(void);
-
 void add_q(stack_t **, unsigned int);
 
+/*TOOL.c*/
+void open_f(char *);
+void read_f(FILE *);
+int sep_(char *, int, int);
+void find_func(char *, char *, int, int);
 void call_func(op_func, char *, char *, int, int);
-
-
-
-
-/*Math operations with nodes*/
-
-
 
 
 #endif
