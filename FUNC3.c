@@ -62,9 +62,9 @@ stack_t *my_node(int n)
 /**
  * free_nodes - Free nodes.
  */
-void free_nodes(void)
+void free_(void)
 {
-	stack_t *t;
+	stack_t *t, *head;
 
 	if (head == NULL)
 		return;
