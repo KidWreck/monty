@@ -38,6 +38,7 @@ typedef struct instruction_s
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
+extern stack_t *head;
 typedef void (*my_op)(stack_t **, unsigned int);
 
 
