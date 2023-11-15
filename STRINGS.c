@@ -5,11 +5,11 @@
  * @st: Pointer to stack.
  * @ln: line number.
  */
-void print_c(stack_t **s, unsigned int ln)
+void print_c(stack_t **st, unsigned int ln)
 {
 	int a;
 
-	if (st == NULL || *s == NULL)
+	if (st == NULL || *st == NULL)
 		err_2(11, ln);
 
 	a = (*st)->n;
@@ -87,7 +87,7 @@ void rot_fog(stack_t **st, __attribute__((unused))unsigned int ln)
 	while (t->next != NULL)
 		t = t->next;
 
-	t->next = *s;
+	t->next = *st;
 	t->prev->next = NULL;
 	t->prev = NULL;
 	(*st)->prev = t;

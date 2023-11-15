@@ -14,7 +14,7 @@ void nop_(stack_t **st, unsigned int ln)
 
 /**
  * swap_ - Swaps top two nodes.
- * @stack: Pointer to stack.
+ * @st: Pointer to stack.
  * @ln: line number.
  */
 void swap_(stack_t **st, unsigned int ln)
@@ -35,7 +35,7 @@ void swap_(stack_t **st, unsigned int ln)
 
 /**
  * add_ - Add node.
- * @stack: Pointer to stack.
+ * @st: Pointer to stack.
  * @ln: line number.
  */
 void add_(stack_t **st, unsigned int ln)
@@ -63,8 +63,8 @@ void sub_(stack_t **st, unsigned int ln)
 	int res;
 
 	if (st == NULL || *st == NULL || (*st)->next == NULL)
-    err_1(8, ln, "sub");
-  
+		err_1(8, ln, "sub");
+
 	(*st) = (*st)->next;
 	res = (*st)->n - (*st)->prev->n;
 	(*st)->n = res;
@@ -75,7 +75,7 @@ void sub_(stack_t **st, unsigned int ln)
 
 /**
  * div_ - div node.
- * @stack: Pointer to stack.
+ * @st: Pointer to stack.
  * @ln: line number.
  */
 void div_(stack_t **st, unsigned int ln)
@@ -86,7 +86,7 @@ void div_(stack_t **st, unsigned int ln)
 		err_1(8, ln, "div");
 
 	if ((*st)->n == 0)
-		err_2(9, line_number);
+		err_2(9, ln);
 	(*st) = (*st)->next;
 	res = (*st)->n / (*st)->prev->n;
 	(*st)->n = res;

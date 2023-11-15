@@ -11,7 +11,7 @@ void open_f(char *fn)
 	if (fn == NULL || fd == NULL)
 		err_1(2, fn);
 
-	read_file(fd);
+	read_f(fd);
 	fclose(fd);
 }
 
@@ -27,7 +27,9 @@ void read_f(FILE *fd)
 	size_t len = 0;
 
 	for (ln = 1; getline(&buf, &len, fd) != -1; ln++)
-    klam = sep_(buf, ln, klam);
+	{
+		klam = sep_(buf, ln, klam);
+	}
 	free(buf);
 }
 
@@ -69,7 +71,7 @@ int sup_(char *buf, int ln, int klam)
  * @klam: format. If 0 node as a stack , if 1 node as a queue.
  * @ln: line number
  */
-void find_func(char *opcode, char *value, int ln, int format)
+void find_func(char *op, char *v, int ln, int klam)
 {
 	int i, j;
 
@@ -120,7 +122,7 @@ void call_func(my_op func, char *op, char *v, int ln, int klam)
 {
 	stack_t *node;
 	int i, j = 1;
-  
+
 	if (strcmp(op, "push") == 0)
 	{
 		if (v != NULL && v[0] == '-')

@@ -1,7 +1,5 @@
 #include "monty.h"
 
-stack_t *head = NULL;
-
 /**
  * main - entry point
  * @argc: arg count
@@ -15,7 +13,7 @@ int main(int argc, char *argv[])
 		fprintf(stderr, "USAGE: monty file\n");
 		exit(EXIT_FAILURE);
 	}
-	open_file(argv[1]);
-	free_nodes();
+	open_f(argv[1]);
+	free_();
 	return (0);
 }

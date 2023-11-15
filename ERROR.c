@@ -42,7 +42,7 @@ void err_1(int err, ...)
 		default:
 			break;
 	}
-	free_nodes();
+	free_();
 	exit(EXIT_FAILURE);
 }
 
@@ -62,7 +62,7 @@ void err_2(int err, ...)
 	ln = va_arg(arg, int);
 	switch (err)
 	{
-    case 9:
+		case 9:
 			fprintf(stderr, "L%d: division by zero\n",
 				va_arg(arg, unsigned int));
 			break;
@@ -75,6 +75,6 @@ void err_2(int err, ...)
 		default:
 			break;
 	}
-	free_nodes();
+	free_();
 	exit(EXIT_FAILURE);
 }

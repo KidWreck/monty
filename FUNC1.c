@@ -46,7 +46,7 @@ void print_st(stack_t **st, unsigned int ln)
 
 /**
  * pop_fog - delete fog.
- * @stack: Pointer to stack.
+ * @st: Pointer to stack.
  * @ln: line number.
  */
 void pop_fog(stack_t **st, unsigned int ln)
@@ -65,7 +65,7 @@ void pop_fog(stack_t **st, unsigned int ln)
 
 /**
  * print_fog - Prints fog.
- * @stack: Pointer to stack.
+ * @st: Pointer to stack.
  * @ln: line number.
  */
 void print_fog(stack_t **st, unsigned int ln)
