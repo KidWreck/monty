@@ -64,7 +64,7 @@ stack_t *my_node(int n)
  */
 void free_(void)
 {
-	stack_t *t, *head;
+	stack_t *t;
 
 	if (head == NULL)
 		return;
