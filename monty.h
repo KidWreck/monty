@@ -47,6 +47,12 @@ typedef void (*my_op)(stack_t **, unsigned int);
 void err_1(int err, ...)
 void err_2(int err, ...)
 
+/*STRINGS.c*/
+void print_c(stack_t **, unsigned int);
+void print_s(stack_t **, unsigned int);
+void rot_t7t(stack_t **, unsigned int);
+void rot_fog(stack_t **, unsigned int);
+
 
 
 /************************************/
@@ -78,12 +84,6 @@ void div_(stack_t **, unsigned int);
 void mul_(stack_t **, unsigned int);
 void mod_(stack_t **, unsigned int);
 
-/*String operations*/
-void print_c(stack_t **, unsigned int);
-void print_s(stack_t **, unsigned int);
-void rot_t7t(stack_t **, unsigned int);
 
-/*Error hanlding*/
-void rot_fog(stack_t **, unsigned int);
 
 #endif
